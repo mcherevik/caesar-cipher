@@ -80,10 +80,11 @@ print("Please choose the language: press 1 for English and 2 for Russian")
 language_choice = choose_var()
 print("Please choose the shift direction: press 1 for ciphering (a + 3 = d), 2 for deciphering (d - 3 = a)")
 direction_choice = choose_var()
-print("Please enter your text in one line")
-initial_text = input()
 print("Please enter the shift size")
 user_shift = valid_number()
+print("Please enter your text in one line")
+initial_text = input()
+
 
 if direction_choice and language_choice:
     print(english_cipher(initial_text, user_shift))
